@@ -1,0 +1,269 @@
+{
+    "results": [{
+        "grade": 1,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 25000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 5000,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 1250,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 900,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 2000,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 20000,
+            "active": true
+        }]
+    }, {
+        "grade": 2,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 35000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 5750,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 2050,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 1100,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 30000,
+            "active": true
+        }]
+    }, {
+        "grade": 3,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 45000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 6050,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 3850,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 1350,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 5000,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 40000,
+            "active": true
+        }]
+    }, {
+        "grade": 4,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 55000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 7350,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 4650,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 1650,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 6500,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 55000,
+            "active": true
+        }]
+    }, {
+        "grade": 5,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 65000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 8050,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 5750,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 1950,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 8300,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 60000,
+            "active": true
+        }]
+    }, {
+        "grade": 6,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 75000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 13000,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 7000,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 2550,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 10000,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 65000,
+            "active": true
+        }]
+    }, {
+        "grade": 7,
+        "costs": [{
+            "title": "School Fees",
+            "icon": "fa-graduation-cap",
+            "value": 85000,
+            "active": true
+        }, {
+            "title": "Extra Murals",
+            "icon": "fa-futbol-o",
+            "value": 12725,
+            "active": true
+        }, {
+            "title": "Stationery & Supplies",
+            "icon": "fa-pencil",
+            "value": 7000,
+            "active": true
+        }, {
+            "title": "Uniforms",
+            "icon": "fa-briefcase",
+            "value": 3500,
+            "active": true
+        }, {
+            "title": "Trips & Outings",
+            "icon": "fa-bus",
+            "value": 12000,
+            "active": true
+        }, {
+            "title": "Transport",
+            "icon": "fa-car",
+            "value": 3000,
+            "active": true
+        }, {
+            "title": "Boarding",
+            "icon": "fa-home",
+            "value": 77000,
+            "active": true
+        }]
+    }]
+}

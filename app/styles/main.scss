@@ -1,0 +1,284 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+// 
+
+
+//color variables
+$color-primary: #e21a22;
+$color-secondary: #001950;
+$color-success: #94e21a;
+
+$color-light: #ffffff;
+$color-dark: #333333;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: darken($color-light,10%);
+  color: $color-dark;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  font-family: 'Century Gothic', Verdana;
+  color: $color-light;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+select {
+  background: rgba($color-dark,0.5) url(../images/dropdown.png) no-repeat;
+  color:$color-light;
+  border: none;
+  width: 148px;
+  height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.font-default {
+  font-family: 'Century Gothic', Verdana !important;
+}
+
+.font-med {
+  font-size:40px;
+}
+
+.font-med-m {
+  font-size:22px;
+}
+
+.font-def {
+  font-size:18px;
+}
+
+.font-up {
+  text-transform:uppercase;
+}
+
+.font-instruct {
+  color:$color-light;
+  text-transform: uppercase;
+  text-align:center;
+}
+.text-overflow {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+  max-width:160px;
+}
+
+.fa-play {
+  &:before {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    display:block;
+    color: white;
+    margin: 10px 15px 10px 0;
+  }
+}
+
+//helpers
+.padding {
+  padding:10px;
+}
+
+.mtb--60 {
+  margin-bottom:60px;
+}
+
+
+.pa {
+  font-size:13px;
+  text-transform: lowercase !important;
+}
+
+
+
+.container {
+  max-width:980px;
+  width:100%;
+}
+
+header, footer {
+  width:100%;
+  height:80px;
+  padding:10px;
+  display:block;
+}
+
+.logo img {
+  max-width:150px;
+  height:auto;
+}
+
+.btn--danger {
+  background:$color-primary;
+  cursor: pointer;
+}
+
+.btn-icon {
+  position:absolute;
+  &--small {
+    height:35px;
+    width:35px;
+  }
+}
+
+.divider--red {
+  width:100%;
+  height:1px;
+  background:$color-primary;
+}
+
+.info-block {
+  transition: all 0.5s ease;
+  margin:10px 0;
+  box-sizing:border-box;
+  border:1px solid darken($color-light,10%);
+  color:$color-dark;
+  background:$color-light;
+  &--op {
+    background:rgba($color-dark,0.5);
+  }
+  &--transparent {
+    background:transparent !important;
+    border:0;
+    color:$color-light;
+  }
+}
+
+.info-block--white {
+  background:$color-light;
+}
+
+.info-block__content {
+  min-height:125px;
+  display:block;
+}
+
+.info-block__icon {
+  font-size: 80px;
+  text-align: center;
+  display: block;
+}
+
+.info-block--price {
+  border: 0px;
+  height: 80px;
+  margin: 0 auto;
+  color: $color-light;
+  padding:10px;
+  overflow:hidden;
+}
+
+.info-block__title {
+  display: block;
+  text-align:center;
+  font-size:15px;
+  text-transform: uppercase;
+}
+
+
+.info-block__title.active {
+  &:after {
+    margin-left:20px;
+    color:$color-success;
+    content: "\f00c";
+  }
+}
+
+.info-block__bar {
+  margin-top:43px;
+  font-size:18px;
+  line-height:60px;
+  color:$color-light;
+  text-align:center;
+  &--danger {
+    background: $color-primary;
+  } 
+  &--info {
+    background: $color-secondary;
+  } 
+}
+
+.options-holder {
+  max-width:450px;
+  width:100%;
+  min-height:325px;
+  margin:0 auto;
+}
+
+.user-icon {
+  margin: 106px 20px 0 0;
+}
+
+
+.full-bg {
+  width:100%;
+  height:auto;
+  background:darken($color-light, 20%);
+  h2, h3 {
+    color:$color-dark;
+  }
+  &--img {
+    @extend .full-bg;
+    background:darken($color-light, 20%) url(../images/children-bg.jpg) no-repeat top;
+    background-size:125%;
+    h2, h3 {
+    color:$color-light;
+  }
+  }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  .info-block {
+    color:$color-light;
+    background:rgba($color-dark,0.5); 
+    &--white {
+      background:white;
+      color:$color-dark;
+    }
+  }
+
+  .info-block--price {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    border: 0px;
+  }
+
+  .options-holder {
+    width:320px;
+    min-height:50px;
+    margin:0 auto;
+  }
+
+  .text-overflow {
+    max-width:210px;
+  }
+
+  .full-bg--img {
+    background-size:163%;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .full-bg--img {
+    background-size:100%;
+  }
+
+}
