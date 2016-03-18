@@ -1,0 +1,11 @@
+//Events
+#event-list {list-style-type: none; display: inline-block; margin-bottom: 0; width: 100%;
+	li {display: block; margin-bottom: 1em; vertical-align: top;
+		&:last-of-type {margin-bottom: 0;}
+		&:after {content: ''; width: 100%; display: block; clear: both;}
+	}
+	.time {font-family: "Georgia",Times,Times New Roman,serif; font-style: italic; padding-bottom: 0.5em; border-bottom: 3px solid $green; display: inline-block; max-width: 35px; margin-right: 1em; float: left;}
+	.event-info {width: 80%; float: left;}
+	.event-title {margin-top: 0.05em; margin-bottom: 0.75em;}
+	.event-details {font-size: 70%;}
+}

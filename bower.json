@@ -1,0 +1,26 @@
+{
+  "name": "nativevml-fe-test",
+  "description": "The dependencies for this test",
+  "main": "",
+  "authors": [
+    "Maneesh Chiba"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.1",
+    "modernizr": "^3.3.1",
+    "html5shiv": "^3.7.3"
+  }
+}

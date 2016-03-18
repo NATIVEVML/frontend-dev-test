@@ -1,6 +1,12 @@
-# Build a Web Page Test
+#FED Test Solution
+I used a gulp as a build tool and sass as a preprocessor produce the css for this test.
+You can [view a live view of the result here](http://staging.maneeshchiba.com/nativefed).
 
-## Overview
+Get in touch with me <mpchiba@gmail.com>
+
+## Build a Web Page Test
+
+### Overview
 
 In `designs.zip` there are PSD's for each of the following breakpoints:
 
@@ -8,7 +14,7 @@ In `designs.zip` there are PSD's for each of the following breakpoints:
  - 768
  - 992
 
-## Instructions
+### Instructions
 
  - Build the designs using HTML & CSS
  - The page must be responsive. (Tip: Start with mobile)
@@ -23,7 +29,7 @@ In `designs.zip` there are PSD's for each of the following breakpoints:
  	- Accuracy of your build relative to the designs (We'll be checking your build across multiple browsers)
  - If you have any questions, please [submit an issue](https://github.com/NATIVEVML/frontend-dev-test/issues)
 
-## Deliverables
+### Deliverables
 
 All assets/files needed to build and view the page in a browser.
 
@@ -33,6 +39,6 @@ All assets/files needed to build and view the page in a browser.
 
 Get in touch with us at <careers@native.co.za>
 
-## Bonus Round
+### Bonus Round
 
 If you'd like to demonstrate your JavaScript skills, please have a look at our [Interactive Developer Test](https://github.com/NATIVEVML/interactive-dev-test)

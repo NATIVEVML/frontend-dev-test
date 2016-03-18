@@ -1,0 +1,10 @@
+//Header
+header {padding: 1em 0 1em;
+	.container {border-bottom: 2px solid $faded-blue;}
+}
+#logo {
+	h1 {margin: 0; line-height: 1; padding: 0 0 0.5em;
+		img, svg {max-width: 50px;}
+	}
+}
+#user-name { font-size: 1.875em; margin-bottom: 0.5em;}

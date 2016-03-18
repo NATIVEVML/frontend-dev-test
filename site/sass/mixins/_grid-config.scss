@@ -1,0 +1,12 @@
+/* Break Points */
+
+/* Variables for Media Queries*/
+$mobile-mq: 320px;
+$tablet-mq: 768px;
+$desktop-mq: 992px;
+
+$mobile: "only screen and (min-width:#{$mobile-mq})";
+$tablet: "only screen and (min-width:#{$tablet-mq})";
+$desktop: "only screen and (min-width:#{$desktop-mq})";
+
+@import '_boostrap-grid.scss';

@@ -1,0 +1,15 @@
+//Page Styles
+* {transition:all ease 150ms;}
+.no-cssgradients {
+	body { background:$bg-dark url('#{$images}page-background.jpg'); background-repeat: no-repeat; background-size: cover; background-position:top right;}
+}
+body {background: radial-gradient(ellipse farthest-corner at 100% 0%, $bg-light 0%, $bg-dark 90%);}	
+button {display: inline-block; border:1px solid $faded-blue; background: transparent; color:$text-colour; padding: 0.75em 1.75em; border-radius:0; transition:all ease 0.25s; outline: 0; cursor: pointer; text-align: center; font-weight: 300; font-size: 80%;
+	&:hover {background: $faded-blue; color: #fff; }
+}
+section {padding: 1em 0 0;}
+h3 { font-size: 93%; color: $faded-blue; margin-bottom: 0.5em;}
+#events, #tasks {
+	button {width: 100%;}
+}
+

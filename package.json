@@ -1,0 +1,21 @@
+{
+  "name": "Native VML Front-end Test",
+  "version": "1.0.0",
+  "description": "Front-end proficiency test code",
+  "author": "Maneesh Chiba",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "gulp": "^3.9.0",
+    "node-notifier": "^4.5.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "glob": "^6.0.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6"
+  }
+}

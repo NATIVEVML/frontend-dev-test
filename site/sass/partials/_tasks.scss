@@ -1,0 +1,43 @@
+//Tasks
+#tasks {padding: 2em 0 0;}
+.month-selector { overflow: hidden; max-height: 55px; margin-left: -408px;
+	.selector-conatiner { width: 100%; overflow-y: hidden; overflow-x: scroll;
+		.selector-wrapper { list-style-type: none; text-align: left; white-space: nowrap; margin-bottom: 0;
+			li {display: inline-block;
+				a {display: block; text-transform: uppercase; margin: 1em 1em 2em; color: $white; transition:all ease 250ms;
+					&:hover {transform:scale(1.2);}
+				}
+				.active {transform:scale(1.6); transform-origin:auto; border-bottom:3px solid $green;
+					&:hover {transform:scale(1.6); cursor: default;}
+				}
+			}
+		}
+	}
+}
+
+#task-info-container {padding: 1em 0;
+	.task-title {padding: 0 0 0 0.5em; margin-bottom: 0.75em; position: relative;
+		&:before {content: ''; display: block; width: 0.5em; height: 0.5em; border-radius: 100%; position: absolute; top: 0.6em; left: -0.4em;}
+	}
+	.task-details {padding: 0 0.5em; font-size: 70%;}
+	.task-info {
+		&[data-task-state="outstanding"] {
+			.task-title:before {background: $blue;}
+		} 
+		&[data-task-state="complete"]{
+			.task-title:before {background: $green;}
+		}
+	}
+}
+
+.task-block { display: inline-block; margin: 1em 1em 1em 0;
+	p {margin-bottom: 0.15em;}
+	.label {color: $faded-blue;}
+	.count { margin-bottom: 0; font-size: 2em;}
+	&#complete {
+		.count {color: $green;}
+	}
+	&#outstanding {
+		.count {color: $blue;}
+	}
+}
