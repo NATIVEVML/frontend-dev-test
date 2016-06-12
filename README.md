@@ -1,3 +1,10 @@
+## NATIVEMT EXCISES from Stephen
+ - Open the app/index.html to see the excises
+ - The CSS and HTML file for the excises saved in the app folder
+
+  
+
+
 # Build a Web Page Test
 
 ## Overview
@@ -36,3 +43,6 @@ Get in touch with us at <careers@native.co.za>
 ## Bonus Round
 
 If you'd like to demonstrate your JavaScript skills, please have a look at our [Interactive Developer Test](https://github.com/NATIVEVML/interactive-dev-test)
+
+
+
