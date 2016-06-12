@@ -1,5 +1,7 @@
-## CREATED BRANCH (stephenExcises)
- - installed & used gulp to run task for development
+## NATIVEMT EXCISES from Stephen
+ - Open the app/index.html to see the excises
+ - The CSS and HTML file for the excises saved in the app folder
+
   
 
 
