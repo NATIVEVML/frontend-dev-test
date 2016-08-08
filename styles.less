@@ -1,0 +1,222 @@
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+
+@images-url: "assets/images/";
+
+@misty-green: #97acbb;
+@misty-white: #ebeff0;
+@yellow: #96edb7;
+
+button.btn-flat:hover {
+  background-color: @misty-green;
+  color: @misty-white;
+
+}
+
+body {
+  background-image: url('@{images-url}/page-background.jpg');
+  background-size: cover;
+  color: @misty-white;
+  font-family: 'Roboto';
+}
+
+h2 {
+  color: @misty-green;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+header{
+  padding-top: 36px;
+}
+
+hr {
+  border-top: 2px solid #9f9fba;
+  margin-bottom: 32px;
+}
+
+
+.btn-flat {
+  background-color: transparent;
+  border: solid @misty-green 1px;
+  color: @misty-green;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 20px 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  text-decoration: none;
+  height: 40px;
+}
+
+.date-block {
+  margin-bottom: 54px;
+  .time {
+    color: @misty-white;
+    font-weight: 300;
+    font-size: 50px;
+  }
+}
+
+.events-block {
+  .details {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+  .event {
+    padding-left: 0px;
+  }
+  .time {
+    border-bottom: 3px solid @yellow;
+    font-family: 'Georgia';
+    font-style: italic;
+    font-size: 15px;
+    padding-bottom: 15px;
+    width: 38px;
+  }
+  .title {
+    font-size: 17px;
+    font-weight: 300;
+    padding-bottom: 15px;
+  }
+}
+
+.footer {
+  margin-bottom: 35px;
+}
+
+.logo img{
+  height:32px;
+}
+
+.welcome-block {
+  margin-top: 36px;
+  .name {
+    color: @misty-white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 0.8;
+  }
+}
+
+.task-block {
+  .completed  {
+    color: #4690b8;
+  }
+  .completed span {
+    color: @misty-green;
+  }
+  .details {
+    font-size: 12px;
+    font-weight: 300;
+    list-style-type: none;
+    margin-bottom: 26px;
+  }
+  .name {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .nav-block {
+    margin-left: -115px;
+    margin-bottom: 20px;
+  }
+  .nav {
+    width: 125%;
+  }
+  .nav li a{
+    color: @misty-green;
+    font-size: 16px;
+    float: left;
+    padding: 10px 10px;
+  }
+  .nav > li > .active {
+    border-bottom: 3px solid @yellow;
+    font-size: 20px;
+    color: white;
+  }
+  .nav > li > a:hover {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+  }
+  .outstanding {
+    color: @yellow;
+  }
+  .outstanding span{
+    color: @misty-green;
+  }
+  .stat-block {
+    padding-left: 0px;
+  }
+  .stats {
+    h2 {
+      font-size: 17px;
+      font-weight: 300;
+
+    }
+    span {
+      font-size: 30px;
+      font-weight: 300;
+    }
+    .completed {
+      color: @yellow;
+    }
+    .outstanding {
+      color:@misty-green;
+    }
+  }
+  .task {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  hr{
+    margin-bottom: 82px;
+  }
+  .date-block {
+    margin-bottom: 90px;
+  }
+  .date-block .time {
+    font-size: 90px;
+    line-height: 0.8;
+  }
+  .events-block .title {
+    padding-top: 30px
+  }
+  .logo {
+    float: right;
+    margin-top: 35px;
+  }
+  .logo img {
+    float: right;
+  }
+  .stat-block {
+    margin-top:-250px;
+  }
+  .stats{
+    h2 {
+      text-align: right;
+    }
+    span {
+      float: right;
+    }
+  }
+ }
+
+@media (min-width: @screen-md-min) {
+  hr{
+    margin-bottom: 94px;
+  }
+  .date-block {
+    margin-bottom: 132px;
+  }
+  .date-block .time {
+    font-size: 120px;
+  }
+  .stat-block {
+    margin-top:-210px;
+  }
+}
