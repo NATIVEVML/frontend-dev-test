@@ -1,0 +1,68 @@
+{
+  "name": "gulp-template",
+  "description": "testing gulp",
+  "main": "index.js",
+  "authors": [
+    "clark lin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dreamteamstarterpack/gulp-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "normalize-css": "^5.0.0",
+    "font-awesome": "^4.7.0",
+    "lodash": "^4.17.4"
+  },
+  "overrides": {
+    
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css",
+        "fonts/*"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "fonts": [
+          "*.otf",
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ]
+      }
+    },
+    "jquery":{
+      "main":[
+        "dist/jquery.min.js"
+      ]  
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/fonts/*",
+        "dist/js/bootstrap.min.js"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "fonts": [
+          "*.otf",
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ],
+        "js": "*.js"
+      }
+    }
+  }
+}
