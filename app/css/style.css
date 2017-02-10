@@ -1,0 +1,656 @@
+/* hides scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mixin */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    background-image: url("../images/page-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+div.content {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.logo {
+    margin: 35px 0px;
+}
+
+div.logo img {
+    width: 48px;
+    height: auto;
+}
+
+.bordered {
+    border: 1px solid red;
+}
+
+.breakline {
+    width: 100%;
+    border-bottom: 2px solid #97acbb;
+    margin: 30px 0px 35px 0px;
+}
+
+.manage-button {
+    border: 1px solid #97acbb;
+    color: #97acbb;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    height: 38px;
+    display: inline-block;
+    width: 100%;
+}
+
+.manage-button p {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+a.section-btn:hover .manage-button {
+    background-color: #97acbb;
+    color: #ebeff0;
+}
+
+.section_label {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #97acbb;
+    margin-bottom: 20px;
+}
+
+/* ======================================= */
+/* wrapper-greeting */
+div.wrapper-greeting .username_label {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ebeff0;
+}
+
+/* ======================================= */
+/* wrapper-dates */
+div.wrapper-dates {
+    margin-bottom: 54px;
+}
+
+div.wrapper-dates .time_label {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: #ebeff0;
+    line-height: 40px;
+}
+
+/* ======================================= */
+/* wrapper-events */
+div.wrapper-events .wrapper-event {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.wrapper-events .wrapper-event .event-time {
+    position: absolute;
+    display: inline;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 15px;
+    color: #ebeff0;
+    width: 38px;
+}
+
+div.wrapper-events .wrapper-event .event-time:after {
+    margin-top: 8px;
+    content: "";
+    display: block;
+    background: #96edb7;
+    height: 3px;
+    width: 100%;
+}
+
+div.wrapper-events .wrapper-event .event {
+    padding-left: 18px;
+    margin-left: 40px;
+    color: #ebeff0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+div.wrapper-events .wrapper-event .event .event-header {
+    font-size: 17px;
+    padding-right: 7px;
+    margin-bottom: 17px;
+}
+
+div.wrapper-events .wrapper-event .event .event-description {
+    font-size: 12px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+}
+
+div.wrapper-events #btn-manage-events {
+    margin-bottom: 48px;
+}
+
+/* ======================================= */
+/* wrapper-tasks */
+div.wrapper-tasks div.section_month_selection {
+    margin-bottom: 25px;
+}
+
+div.wrapper-tasks div.section_month_selection ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    white-space: nowrap;
+    margin-left: -295px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.wrapper-tasks div.section_month_selection ul li {
+    color: #ebeff0;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+div.wrapper-tasks div.section_month_selection ul .active {
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    margin-left: -5px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+div.wrapper-tasks div.section_month_selection ul .active:after {
+    margin-top: 6px;
+    position: absolute;
+    content: "";
+    display: block;
+    background: #96edb7;
+    height: 3px;
+    width: 38px;
+}
+
+div.wrapper-tasks ul.tasks {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+}
+
+div.wrapper-tasks ul.tasks li {
+    padding-left: 0px;
+}
+
+div.wrapper-tasks ul.tasks li:before {
+    content: '\25CF';
+    color: #4690b8;
+    padding-right: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -12px;
+    margin-top: 3px;
+    float: left;
+}
+
+div.wrapper-tasks ul.tasks li.completed:before {
+    content: '\25CF';
+    color: #96edb7;
+}
+
+div.wrapper-tasks ul.tasks .wrapper-task {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ebeff0;
+    display: inline-block;
+}
+
+div.wrapper-tasks ul.tasks .wrapper-task .task-name {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+div.wrapper-tasks ul.tasks .wrapper-task .task-details {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+div.wrapper-tasks #btn-manage-tasks {
+    margin-bottom: 25px;
+}
+
+div.wrapper-tasks .wrapper-task_summary {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-bottom: 34px;
+}
+
+div.wrapper-tasks .wrapper-task_summary .task_summary {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+div.wrapper-tasks .wrapper-task_summary .task_summary-label {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ebeff0;
+    margin-bottom: 15px;
+}
+
+div.wrapper-tasks .wrapper-task_summary .task_summary-value {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+div.wrapper-tasks .wrapper-task_summary #task_completed {
+    color: #96edb7;
+}
+
+div.wrapper-tasks .wrapper-task_summary #task_outstanding {
+    color: #4690b8;
+}
+
+/* ======================================= */
+/* media-queries */
+@media (min-width: 320px) {
+    div.container {
+        width: 320px;
+        display: block;
+    }
+
+    div.content {
+        width: 320px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    div.container {
+        width: 768px;
+        overflow: hidden;
+    }
+
+    div.content {
+        width: 750px;
+        padding: 15px;
+        overflow: visible;
+    }
+
+    div.logo {
+        float: right;
+        margin-top: 90px;
+    }
+
+    div.logo img {
+        width: 61px;
+        height: auto;
+    }
+
+    .manage-button {
+        width: auto;
+        padding: 0 30px;
+        font-size: 14px;
+    }
+
+    .section_label {
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .breakline {
+        border-bottom: 3px solid #97acbb;
+        margin: 38px 0px 82px 0px;
+    }
+
+    div.wrapper-greeting #placeholder_greeting {
+        margin-top: 75px;
+    }
+
+    div.wrapper-greeting .username_label {
+        font-size: 37px;
+        line-height: 37px;
+    }
+
+    div.wrapper-dates {
+        margin-bottom: 90px;
+        border-right: 8px solid #96edb7;
+    }
+
+    div.wrapper-dates #placeholder_current_date {
+        margin-bottom: 14px;
+    }
+
+    div.wrapper-dates .time_label {
+        font-size: 90px;
+        line-height: 70px;
+    }
+
+    div.wrapper-events {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    div.wrapper-events .wrapper-event {
+        padding: 0px;
+    }
+
+    div.wrapper-events .wrapper-event .event-time {
+        position: relative;
+        display: block;
+        font-size: 19px;
+        width: 55px;
+        margin-top: 8px;
+    }
+
+    div.wrapper-events .wrapper-event .event-time:after {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        content: "";
+        display: block;
+        background: #96edb7;
+        height: 3px;
+        width: 55px;
+    }
+
+    div.wrapper-events .wrapper-event .event {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    div.wrapper-events .wrapper-event .event .event-header {
+        font-size: 21px;
+        padding-right: 15px;
+        margin-bottom: 17px;
+    }
+
+    div.wrapper-events .wrapper-event .event .event-description {
+        font-size: 13px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    div.wrapper-events .wrapper-event + .wrapper-event:not(:last-of-type) {
+        padding: 0px 15px;
+    }
+
+    div.wrapper-events .wrapper-event:last-of-type {
+        padding: 0 0 0 15px;
+    }
+
+    div.wrapper-events #btn-manage-events {
+        margin-bottom: 90px;
+    }
+
+    div.wrapper-tasks div.section_month_selection {
+        margin-bottom: 30px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul {
+        margin-left: -322px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul li {
+        font-size: 17px;
+        line-height: 17px;
+        margin-right: 18px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul .active {
+        font-size: 25px;
+        line-height: 25px;
+        margin-left: -7px;
+        margin-right: 11px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul .active:after {
+        margin-top: 11px;
+        content: "";
+        display: block;
+        background: #96edb7;
+        height: 3px;
+        width: 55px;
+    }
+
+    div.wrapper-tasks ul.tasks li:before {
+        margin-left: -16px;
+        margin-top: 5px;
+    }
+
+    div.wrapper-tasks ul.tasks .wrapper-task .task-name {
+        font-size: 21px;
+        margin-bottom: 23px;
+    }
+
+    div.wrapper-tasks ul.tasks .wrapper-task .task-details {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    div.wrapper-tasks #btn-manage-tasks {
+        margin-bottom: 90px;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary {
+        text-align: right;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary {
+        margin-right: 0;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary-label {
+        font-size: 21px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary-value {
+        font-size: 37px;
+        line-height: 37px;
+        margin-bottom: 39px;
+    }
+}
+
+@media (min-width: 992px) {
+    div.container {
+        width: 992px;
+        overflow: visible;
+    }
+
+    div.content {
+        width: 970px;
+        padding: 15px;
+    }
+
+    div.logo {
+        float: right;
+        margin-top: 170px;
+    }
+
+    div.logo img {
+        width: 73px;
+        height: auto;
+    }
+
+    .manage-button {
+        width: auto;
+        padding: 0 30px;
+        font-size: 14px;
+    }
+
+    .section_label {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .breakline {
+        border-bottom: 4px solid #97acbb;
+        margin: 60px 0px 95px 0px;
+    }
+
+    div.wrapper-greeting #placeholder_greeting {
+        margin-top: 155px;
+    }
+
+    div.wrapper-greeting .username_label {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    div.wrapper-dates {
+        margin-bottom: 135px;
+        border-right: 8px solid #96edb7;
+    }
+
+    div.wrapper-dates #placeholder_current_date {
+        margin-bottom: 25px;
+    }
+
+    div.wrapper-dates .time_label {
+        font-size: 130px;
+        line-height: 100px;
+    }
+
+    div.wrapper-events {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    div.wrapper-events .wrapper-event {
+        padding: 0 15px 0 0;
+    }
+
+    div.wrapper-events .wrapper-event .event-time {
+        position: relative;
+        display: block;
+        font-size: 22px;
+        width: 70px;
+    }
+
+    div.wrapper-events .wrapper-event .event-time:after {
+        margin-top: 18px;
+        margin-bottom: 30px;
+        content: "";
+        display: block;
+        background: #96edb7;
+        height: 3px;
+        width: 100%;
+    }
+
+    div.wrapper-events .wrapper-event .event {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    div.wrapper-events .wrapper-event .event .event-header {
+        font-size: 26px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    div.wrapper-events .wrapper-event .event .event-description {
+        font-size: 14px;
+        padding-right: 15px;
+        margin-bottom: 45px;
+    }
+
+    div.wrapper-events #btn-manage-events {
+        margin-bottom: 140px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul {
+        margin-left: -365px;
+        margin-bottom: 35px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul li {
+        font-size: 19px;
+        line-height: 19px;
+        margin-right: 22px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul .active {
+        font-size: 29px;
+        line-height: active;
+        margin-right: 13px;
+        margin-left: -9px;
+    }
+
+    div.wrapper-tasks div.section_month_selection ul .active:after {
+        margin-top: 20px;
+        content: "";
+        display: block;
+        background: #96edb7;
+        height: 3px;
+        width: 70px;
+    }
+
+    div.wrapper-tasks ul.tasks li:before {
+        margin-left: -16px;
+        margin-top: 5px;
+    }
+
+    div.wrapper-tasks ul.tasks .wrapper-task .task-name {
+        font-size: 26px;
+        margin-bottom: 27px;
+    }
+
+    div.wrapper-tasks ul.tasks .wrapper-task .task-details {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    div.wrapper-tasks #btn-manage-tasks {
+        margin-bottom: 170px;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary {
+        text-align: right;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary {
+        margin-right: 0;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary-label {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    div.wrapper-tasks .wrapper-task_summary .task_summary-value {
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 45px;
+    }
+}

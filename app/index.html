@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <!--inject:css-->
+  <!--endinject-->
+
+
+  <!--build:css css/style.min.css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--endbuild-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="content">
+          
+          <div class="logo">
+            <img src="images/logo.svg"> 
+          </div>
+          
+          <div class="wrapper-greeting">
+            <div class="section_label" id="placeholder_greeting">Good Morning</div>  
+            <div class="username_label" id="placeholder_username">John Love Mountain</div>
+          </div>
+
+          <div class="breakline"></div>
+
+          <div class="wrapper-dates">
+            <div class="section_label" id="placeholder_current_date">July 16th 2015</div>
+            <div class="time_label" id="placeholder_time">10:50am</div>
+          </div>
+
+          <div class="wrapper-events">
+            <div class="section_label" id="placeholder_events">Events</div>
+
+            <div class="wrapper-event col-sm-4">
+              <div class="event-time">
+              11:30
+              </div>
+              <div class="event">
+                <div class="event-header">
+                The videographer has began to film. He has sent you a message.
+                </div>
+                <div class="event-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                </div>
+              </div>
+            </div>
+            
+            <div class="wrapper-event col-sm-4">
+              <div class="event-time">
+              3:30
+              </div>
+              <div class="event">
+                <div class="event-header">
+                You have a meeting later today with the roof inspector.
+                </div>
+                <div class="event-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-event col-sm-4">
+              <div class="event-time">
+              4:15
+              </div>
+              <div class="event">
+                <div class="event-header">
+                Meet Telkom engineer for fibre installation at new offices.
+                </div>
+                <div class="event-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                </div>
+              </div>
+            </div>
+            <!-- Add the extra clearfix for only the required viewport -->
+            <a href="#" id="btn-manage-events" class="section-btn">
+              <div class="manage-button">
+                <p>Manage events</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="wrapper-tasks">
+            <div class="section_label" id="placeholder_tasks">Tasks</div>
+
+            <div class="row">
+              <div class="col-sm-9 col">
+                <div class="section_month_selection">
+                  <ul>
+                    <li>JAN</li>
+                    <li>FEB</li>
+                    <li>MAR</li>
+                    <li>APR</li>
+                    <li>MAY</li>
+                    <li>JUN</li>
+                    <li class="active">JUL</li>
+                    <li>AUG</li>
+                    <li>SEP</li>
+                    <li>OCT</li>
+                    <li>NOV</li>
+                    <li>DEC</li>
+                  </ul>
+                </div>
+                
+                <ul class="tasks">
+                  <li>
+                    <div class="wrapper-task">
+                      <div class="task-name">Task name</div>
+                      <div class="task-details">Task details Ipsum dolor sit amet, consectetur adipisicin. Lorem ipsum dolor sit amet, consectetur adipisicin Ipsum dolor sit amet, consecteyturet, consectetur adipisicin</div>
+                    </div>
+                  </li>
+
+                  <li class="completed">
+                    <div class="wrapper-task">
+                      <div class="task-name">Task name</div>
+                      <div class="task-details">Task details Ipsum dolor sit amet, consectetur adipisicin. Lorem ipsum dolor sit amet, consectetur adipisicin Ipsum dolor sit amet, consecteyturet, consectetur adipisicin</div>
+                    </div>
+                  </li>
+                </ul>
+
+                <a href="#" id="btn-manage-tasks" class="section-btn">
+                  <div class="manage-button">
+                    <p>Manage tasks</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-sm-3 col">
+                <div class="wrapper-task_summary">
+
+                  <div class="task_summary">
+                    <div class="task_summary-label">Completed</div>
+                    <div class="task_summary-value" id="task_completed">26</div>
+                  </div>
+                  <div class="task_summary">
+                    <div class="task_summary-label">Outstanding</div>
+                    <div class="task_summary-value" id="task_outstanding">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- close content -->
+
+    </div>
+  </div>
+  <!-- ================================================================== -->
+
+  <!--inject:js-->
+  <!--endinject-->
+
+  <!--build:js js/main.min.js -->
+  <script src="js/main.js"></script>
+  <!--endbuild-->
+</body>
+
+</html>

@@ -1,0 +1,677 @@
+// styles.scss
+
+$font: 'Roboto', sans-serif; 
+$font2: Georgia;
+$bodybg: "../images/page-background.jpg";
+
+$color-faintgrayblue: #97acbb;
+$color-offwhite: #ebeff0;
+$color-highlightgreen: #96edb7;
+$color-listblue:#4690b8;
+
+/* hides scrollbar */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin give-underline($color:#FFF, $width:100%, $height:3px){
+	content:"";
+	display:block;
+	background:$color;
+	height:$height;
+	width:$width;
+}
+
+@mixin draw-circle($color:#FFF){
+	content:'\25CF';
+	color:$color;
+}
+
+html{
+	width:100%;
+	height:100%;
+}
+
+body{
+	margin:0px;
+	padding:0;	
+
+	background-image:url( $bodybg );
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+
+	font-family: $font;
+}	
+
+a{
+	display:block;
+	text-decoration: none;
+}
+
+
+div.container{
+}
+
+div.content{
+	width:auto;
+	display:block;
+ 	margin:0 auto; 
+ 	padding:0;
+ 	overflow:hidden;
+}
+
+div.logo{
+	margin:35px 0px;
+
+	img{
+		width:48px;
+		height:auto;
+	}
+}
+
+.bordered{
+	border:1px solid red;
+}
+
+.breakline{
+	width:100%;
+	border-bottom:2px solid $color-faintgrayblue;
+	margin:30px 0px 35px 0px;
+}
+
+.manage-button{
+	border:1px solid $color-faintgrayblue;
+	color:$color-faintgrayblue;
+	font-size:12px;
+	font-weight:300;
+	font-family:$font;
+	height:38px;
+	display:inline-block;
+	width:100%;
+	p{
+		@include vertical-align();
+		text-align:center;
+	}
+}
+
+a.section-btn:hover .manage-button{
+	background-color:$color-faintgrayblue;
+	color:$color-offwhite;
+}
+
+.section_label{
+	font-family:$font;
+	font-size:17px;
+	font-weight:500;
+	color:$color-faintgrayblue;
+	margin-bottom:20px;
+}
+
+
+
+/* ======================================= */
+/* wrapper-greeting */
+div.wrapper-greeting{
+	.username_label{
+		font-family:$font;
+		font-size:30px;
+		font-weight:300;
+		color:$color-offwhite;
+	}
+}
+
+/* ======================================= */
+/* wrapper-dates */
+div.wrapper-dates{
+	margin-bottom:54px;	
+	.time_label{
+		font-family:$font;
+		font-size:50px;
+		font-weight:300;
+		color:$color-offwhite;
+		line-height:40px;
+	}
+}
+/* ======================================= */
+/* wrapper-events */
+div.wrapper-events{
+	.wrapper-event{
+		padding-left:0px;
+		padding-right:0px;
+		.event-time{
+			position:absolute;
+			display:inline;
+			font-family:$font2;
+			font-style:italic;
+			font-size:15px;
+			color:$color-offwhite;
+			width:38px;
+		}
+
+		.event-time:after{
+			margin-top:8px;
+			@include give-underline($color-highlightgreen);
+		}
+
+		.event{
+			padding-left:18px;
+			margin-left:40px;
+			color:$color-offwhite;
+			font-family:$font;
+			font-weight:300;
+
+			.event-header{
+				font-size:17px;
+				padding-right:7px;	
+				margin-bottom:17px;
+			}
+			.event-description{
+				font-size:12px;
+				padding-right:25px;
+				margin-bottom:25px;
+			}
+		}		
+	}
+	#btn-manage-events{
+		margin-bottom:48px;
+	}
+}
+
+/* ======================================= */
+/* wrapper-tasks */
+div.wrapper-tasks{
+	div.section_month_selection{
+		margin-bottom:25px;
+		ul{
+			display:inline-block;
+			list-style:none;
+			padding:0px;
+			white-space: nowrap;
+			margin-left:-295px;
+			margin-top:0px;
+			margin-bottom:0px;
+			li{
+				color:$color-offwhite;
+				display:inline-block;
+				font-size:16px;
+				font-family:$font;
+				font-weight:500;
+				margin-right:15px;
+			}
+
+			.active{
+				font-size:24px;
+				line-height:24px;
+				margin-right:10px;
+				margin-left:-5px;
+				display:inline-block;
+				vertical-align:sub;
+			}
+
+			.active:after{
+				margin-top:6px;
+				position:absolute;
+				@include give-underline($color-highlightgreen, 38px);
+			}
+		}
+	}
+
+	ul.tasks{
+		list-style:none;
+		padding:0px;
+		margin:0px;
+		vertical-align:top;
+
+		li{
+			padding-left:0px;
+		}
+
+		li:before{
+			@include draw-circle($color-listblue);
+			padding-right:0px;
+			display:inline-block;
+			vertical-align:top;
+			margin-left:-12px;
+			margin-top:3px;
+			float:left;
+		}
+		li.completed:before{
+			@include draw-circle($color-highlightgreen);
+		}
+
+		.wrapper-task{
+			font-family:$font;
+			font-weight:300;
+			color:$color-offwhite;
+			display:inline-block;
+
+			.task-name{
+				font-size:17px;
+				margin-bottom:20px;
+			}
+			.task-details{
+				font-size:12px;
+				margin-bottom:30px;
+			}
+		}	
+	}
+
+	#btn-manage-tasks{
+		margin-bottom:25px;
+	}
+
+	.wrapper-task_summary{
+		font-family:$font;
+		font-weight:300;
+		margin-bottom:34px;
+
+		.task_summary{
+			display:inline-block;
+			margin-right:20px;
+		}
+		.task_summary-label{
+			font-size:17px;
+			line-height:17px;
+			color:$color-offwhite;
+			margin-bottom:15px;
+		}	
+		.task_summary-value{
+			font-size:30px;
+			line-height:30px;
+		}
+		#task_completed{
+			color:$color-highlightgreen;
+		}
+
+		#task_outstanding{
+			color:$color-listblue;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================= */
+/* media-queries */
+
+@media(min-width:320px){
+	div.container{
+		width:320px;
+		display:block;
+	}
+	div.content{
+ 		width:320px;
+ 		padding:15px;
+ 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px){
+	div.container{
+		width:768px;
+		overflow:hidden;
+	}
+	div.content{
+		width:750px;
+		padding:15px;
+		overflow:visible;
+	}
+	div.logo{
+		float:right;
+		margin-top:90px;
+		img{
+			width:61px;
+			height:auto;
+		}
+	}
+
+	.manage-button{
+		width:auto;
+		padding:0 30px;
+		font-size:14px;
+	}
+
+	.section_label{
+		font-size:21px;
+		margin-bottom:17px;
+	}
+
+	.breakline{
+		border-bottom:3px solid $color-faintgrayblue;
+		margin:38px 0px 82px 0px;
+	}
+
+	div.wrapper-greeting{
+		#placeholder_greeting{
+			margin-top:75px;
+		}
+		.username_label{
+			font-size:37px;
+			line-height:37px;
+		}
+	}
+
+	div.wrapper-dates{
+		margin-bottom:90px;
+		border-right:8px solid $color-highlightgreen;
+		#placeholder_current_date{
+			margin-bottom:14px;
+		}
+		.time_label{
+			font-size:90px;
+			line-height:70px;
+		}
+	}
+
+	div.wrapper-events{
+		padding:0px;
+		margin:0px;
+		
+		.wrapper-event{
+			padding:0px;
+
+			.event-time{
+				position:relative;
+				display:block;
+				font-size:19px;
+				width:55px;
+				margin-top:8px;
+			}
+			.event-time:after{
+				margin-top:15px;
+				margin-bottom:30px;
+				@include give-underline($color-highlightgreen, 55px);
+			}
+			.event{
+				padding-left:0px;
+				margin-left:0px;
+				.event-header{
+					font-size:21px;
+					padding-right:15px;	
+					margin-bottom:17px;
+				}
+				.event-description{
+					font-size:13px;
+					padding-right:15px;
+					margin-bottom:30px;
+				}
+			}
+		}
+		.wrapper-event + .wrapper-event:not(:last-of-type){
+			padding:0px 15px;
+		}
+		.wrapper-event:last-of-type{
+			padding:0 0 0 15px;
+		}
+		
+		#btn-manage-events{
+			margin-bottom:90px;
+		}
+	}
+
+	
+
+	div.wrapper-tasks{
+
+		div.section_month_selection{
+			margin-bottom:30px;
+
+			ul{
+				margin-left:-322px;
+
+				li{
+					font-size:17px;
+					line-height:17px;
+					margin-right:18px;
+				}
+				.active{
+					font-size:25px;
+					line-height:25px;
+					margin-left:-7px;
+					margin-right:11px;
+				}
+				.active:after{
+					margin-top:11px;
+					@include give-underline($color-highlightgreen, 55px);
+				}
+			}
+		}
+		ul.tasks{
+			li:before{
+				margin-left:-16px;
+				margin-top:5px;
+			}
+			.wrapper-task{
+			
+				.task-name{
+					font-size:21px;
+					margin-bottom:23px;
+				}
+				.task-details{
+					font-size:13px;
+					margin-bottom:30px;
+				}
+			}
+		}
+		#btn-manage-tasks{
+			margin-bottom:90px;
+		}
+
+		.wrapper-task_summary{
+			text-align:right;
+			.task_summary{
+				margin-right:0;
+			}
+			.task_summary-label{
+				font-size:21px;
+				line-height:21px;
+				margin-bottom:20px;
+			}
+			.task_summary-value{
+				font-size:37px;
+				line-height:37px;
+				margin-bottom:39px;
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:992px){
+
+	div.container{
+		width:992px;
+		overflow:visible;
+	}
+	div.content{
+		width:970px;
+		padding:15px;
+	}
+	div.logo{
+		float:right;
+		margin-top:170px;
+		img{
+			width:73px;
+			height:auto;
+		}
+	}
+
+	.manage-button{
+		width:auto;
+		padding:0 30px;
+		font-size:14px;
+	}
+
+	.section_label{
+		font-size:26px;
+		margin-bottom:20px;
+	}
+
+	.breakline{
+		border-bottom:4px solid $color-faintgrayblue;
+		margin:60px 0px 95px 0px;
+	}
+
+	div.wrapper-greeting{
+		#placeholder_greeting{
+			margin-top:155px;
+		}
+		.username_label{
+			font-size:45px;
+			line-height:45px;
+		}
+	}
+
+	div.wrapper-dates{
+		margin-bottom:135px;
+		border-right:8px solid $color-highlightgreen;
+		#placeholder_current_date{
+			margin-bottom:25px;
+		}
+		.time_label{
+			font-size:130px;
+			line-height:100px;
+		}
+	}
+
+	div.wrapper-events{
+		padding:0px;
+		margin:0px;
+		.wrapper-event{
+			padding:0 15px 0 0;
+		}
+		.wrapper-event{
+			.event-time{
+				position:relative;
+				display:block;
+				font-size:22px;
+				width:70px;
+			}
+			.event-time:after{
+				margin-top:18px;
+				margin-bottom:30px;
+				@include give-underline($color-highlightgreen);
+			}
+			.event{
+				padding-left:0px;
+				margin-left:0px;
+				.event-header{
+					font-size:26px;
+					padding-right:15px;	
+					margin-bottom:20px;
+				}
+				.event-description{
+					font-size:14px;
+					padding-right:15px;
+					margin-bottom:45px;
+				}
+
+			}
+		}
+		#btn-manage-events{
+			margin-bottom:140px;
+		}
+	}
+
+	div.wrapper-tasks{
+
+		div.section_month_selection{
+			ul{
+				margin-left:-365px;
+				margin-bottom:35px;
+				li{
+					font-size:19px;
+					line-height:19px;
+					margin-right:22px;
+				}
+				.active{
+					font-size:29px;
+					line-height:active;
+					margin-right:13px;
+					margin-left:-9px;
+				}
+				.active:after{
+					margin-top:20px;
+					@include give-underline($color-highlightgreen, 70px);					
+				}
+			}
+		}
+
+		ul.tasks{
+			li:before{
+				margin-left:-16px;
+				margin-top:5px;
+			}
+			.wrapper-task{
+			
+
+				.task-name{
+					font-size:26px;
+					margin-bottom:27px;
+				}
+				.task-details{
+					font-size:14px;
+					margin-bottom:40px;
+				}
+			}
+		}
+		#btn-manage-tasks{
+			margin-bottom:170px;
+		}
+		.wrapper-task_summary{
+			text-align:right;
+			.task_summary{
+				margin-right:0;
+			}
+			.task_summary-label{
+				font-size:26px;
+				line-height:26px;
+				margin-bottom:20px;
+			}
+			.task_summary-value{
+				font-size:45px;
+				line-height:45px;
+				margin-bottom:45px;
+			}
+		}
+	}
+
+}
