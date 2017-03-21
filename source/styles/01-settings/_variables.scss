@@ -1,0 +1,26 @@
+//--- Project breakpoint aliases ---//
+$blueq-breakpoints: (
+  xxs: 240px,
+  xs: 320px, // used
+  s: 468px,
+  m: 600px,
+  l: 768px, // used
+  xl: 992px, // used
+  xxl: 1200px,
+  xxxl: 1300px,
+);
+
+//--- Colour variables ---//
+$white: #ffffff;
+$primary-colour: #ebeff0;
+$secondary-colour: #97acba;
+$background-colour: #43687b;
+
+$light-blue: #91eebc;
+$dark-blue: #4491b5;
+
+$transition: 0.2s;
+
+$default-margin: 120px;
+$large-margin: 70px;
+$small-margin: 40px;

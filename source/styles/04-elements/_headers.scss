@@ -1,0 +1,114 @@
+h1 {
+  @include font-size (45px);
+  font-family: 'Roboto', 'Arial';
+  font-weight: 300; // light
+  margin-left: -5px;
+
+  @media screen {
+    @include blueq-max ('xl') {
+      @include font-size (37px);
+    }
+  }
+
+  @media screen {
+    @include blueq-max ('xs') {
+      @include font-size (30px);
+    }
+  }
+
+  &.h1--large {
+    @include font-size (130px);
+
+    @media screen {
+      @include blueq-max ('xl') {
+        @include font-size (90px);
+      }
+    }
+
+    @media screen {
+      @include blueq-max (400px) {
+        @include font-size (50px);
+      }
+    }
+  }
+}
+
+h2 {
+  @include font-size (26px);
+  color: $secondary-colour;
+  font-family: 'Roboto', 'Arial';
+  font-weight: 500; // medium
+  margin-bottom: 20px;
+
+  @media screen {
+    @include blueq-max ('xl') {
+      @include font-size (21px);
+    }
+  }
+
+  @media screen {
+    @include blueq-max (400px) {
+      @include font-size (17px);
+    }
+  }
+}
+
+h3 {
+  @include font-size (26px);
+  font-family: 'Roboto', 'Arial';
+  font-weight: 300; // light
+  margin-bottom: 20px;
+
+  @media screen {
+    @include blueq-max ('xl') {
+      @include font-size (21px);
+    }
+  }
+
+  @media screen {
+    @include blueq-max ('xs') {
+      @include font-size (17px);
+    }
+  }
+
+  &.h3--secondary {
+    color: $secondary-colour;
+    text-align: right;
+
+    @include blueq-max (500px) {
+      text-align: left;
+      display: inline-block;
+      margin-right: 30px;
+    }
+    span {
+      display:block;
+      font-size: 45px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+h4 {
+  @include font-size (22px);
+  font-family: 'Georgia', sans-serif;
+  font-weight: 300; // light
+  font-style: italic;
+  padding-bottom: 20px;
+  border-bottom: 3px solid $light-blue;
+  margin-bottom: 35px;
+  padding-right: 18px;
+  display: inline-block;
+
+  @media screen {
+    @include blueq-max ('xl') {
+      @include font-size (19px);
+    }
+  }
+
+  @media screen {
+    @include blueq-max ('xs') {
+      @include font-size (15px);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.date-time {
+  margin-bottom: $default-margin;
+  @include blueq-max ('l') {
+    margin-bottom: $large-margin;
+  }
+  @include blueq-max ('xs') {
+    margin-bottom: $small-margin;
+  }
+  .container {
+    border-right: 10px solid $light-blue;
+    @include blueq-max ('l') {
+      border-right: 8px solid $light-blue;
+    }
+    @include blueq-max ('xs') {
+      border-right: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.events {
+  margin-bottom: $default-margin;
+  @include blueq-max ('l') {
+    margin-bottom: $large-margin;
+  }
+  @include blueq-max ('xs') {
+    margin-bottom: $small-margin;
+  }
+
+  .cols {
+    padding-right: 30px;
+    margin-bottom: 20px;
+    @include blueq-max('l'){
+      padding-right: 0px;
+    }
+  }
+}

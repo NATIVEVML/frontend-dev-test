@@ -1,0 +1,38 @@
+p {
+  font-family: 'Roboto', 'Arial';
+  @include font-size (14px);
+  font-weight: 300; // light
+}
+
+ul li {
+
+}
+
+a {
+  @include font-size (14px);
+  @include transition ();
+  font-family: 'Roboto', 'Arial';
+  color: $secondary-colour;
+  font-weight: 300; // light
+
+  &.button {
+    margin-top: 45px;
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid $secondary-colour;
+    text-decoration: none;
+
+    @include blueq-max ('xs') {
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin: 45px auto 0 auto;
+    }
+
+    &:hover {
+      border: 1px solid $secondary-colour;
+      background: $secondary-colour;
+      color: $white;
+    }
+  }
+}
