@@ -29,7 +29,7 @@ export function handleErrors () {
 
 requireDir('./gulp')
 
-gulp.task('_build', ['styles', 'static', 'scripts', 'docs'])
+gulp.task('_build', ['styles', 'static', 'scripts', 'docs', 'html'])
 
 gulp.task('default', cb => {
   env = DEV
@@ -38,7 +38,7 @@ gulp.task('default', cb => {
 
 gulp.task('release', cb => {
   env = RELEASE
-  runSequence('_build', cb)
+  runSequence('clean', ['_build', 'html'], cb)
 })
 
 gulp.task('stage', cb => {
