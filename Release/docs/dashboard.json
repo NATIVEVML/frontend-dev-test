@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Templates",
+    "pages": [
+      {
+        "name": "Typography",
+        "url": "/pages/Typography.html",
+        "status": 2,
+        "links": [],
+        "notes": []
+      },
+      {
+        "name": "Assessment Main Page",
+        "url": "/pages/main.html",
+        "status": 2,
+        "links": [],
+        "notes": []
+      }
+    ]
+  }
+]

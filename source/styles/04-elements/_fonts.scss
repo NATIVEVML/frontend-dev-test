@@ -1,0 +1,13 @@
+@font-face {
+  name: 'Roboto';
+  src: font-sources('/assets/fonts/Roboto-Light', 'eot' 'ttf' 'woff' 'woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  name: 'Roboto';
+  src: font-sources('/assets/fonts/Roboto-Medium', 'eot' 'ttf' 'woff' 'woff2');
+  font-weight: 500;
+  font-style: italic;
+}

@@ -1,0 +1,16 @@
+{
+  "name":"Native VML Frontend assessment",
+  "version": "1.0.0",
+  "menu": [
+    {
+      "name": "Dashboard",
+      "source": "dashboard/docs/dashboard.json"
+    },
+    {
+      "name": "For developers",
+      "source": "page/docs/README.md"
+    }
+  ],
+  "logo": "https://www.vml.com/native-vml/sites/all/themes/vml/favicon.ico",
+  "themeColor": "#3d3833"
+}
