@@ -1,0 +1,165 @@
+/* Global styles for Native VML Frontend Devtest*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+  color:#97acba;
+  background: url('./image-assets/page-background.jpg') no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size:24px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+hr.divider {
+  color:#97acba;
+  margin: 55px auto 90px;
+}
+
+.btn {
+  border:1px solid #97acba;
+  padding: 10px 25px;
+  text-align: center;
+  color:#97acba;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+.btn:hover {
+  color: #ebeff0;
+  background: #97acba;
+}
+
+/* Header Styles */
+
+header, #header {
+  padding-top: 90px;
+}
+
+.logo {
+  display: block;
+  height:40px;
+  width: 60px;
+  background: url('./image-assets/logo.svg') no-repeat;
+  background-size:contain;
+}
+
+#greeting {
+  font-size: 16px;
+}
+
+#name {
+  font-size: 28px;
+  color: #ebeff0;
+  padding-top:25px;
+}
+
+/* Content Wrapper Styles */
+
+.section-wrapper {
+  margin-bottom: 130px;
+}
+
+.btn.manage {
+  margin-top:40px;
+}
+
+.date {
+  font-size:20px;
+}
+
+.time {
+  font-size: 90px;
+  color: #ebeff0;
+}
+
+.event-time {
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #ebeff0;
+  padding-right: 10px;
+  padding-bottom: 1em;
+  border-bottom: 3px solid #91eebc;
+  margin-bottom: 35px;
+}
+
+.month-list {
+  margin-left: -130px;
+  margin-bottom: 25px;
+}
+
+.month-list li {
+  display: inline-block;
+  list-style: none;
+  padding-top:5px;
+  padding-right:20px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.month-list li.selected {
+  font-size: 20px;
+  color:#ebeff0;
+  padding: 0px 20px 20px 0px;
+  margin-right: -10px;
+  border-bottom:3px solid #91eebc;
+}
+
+.task-list {
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.task-list li:before {
+  content: '\2022';
+  font-size: 22px;
+  position: absolute;
+  left: -12px;
+  top: -2px;
+}
+
+.task-list li:nth-child(even):before {
+  color:#91eebc;
+}
+
+.task-count {
+  text-align: right;
+  padding-bottom: 15px;
+}
+
+.task-count span {
+  font-size: 32px;
+}
+
+.task-count .completed {
+  color: #91eebc;
+}
+
+.task-count .outstanding {
+  color: #4491b5;
+}
+
+/* Footer Styles */
+
+.footer, #footer {
+  padding-top: 35px;
+}
